@@ -1,0 +1,32 @@
+{
+  "name": "defect_annealing",
+  "title": "Vacancy–interstitial defect annealing",
+  "method": "Object KMC · defect migration and recombination",
+  "description": "Tracks vacancy and self-interstitial objects on a periodic 2D coarse lattice.",
+  "metrics": {
+    "initial_defect_objects": 70,
+    "final_vacancies": 2,
+    "final_interstitials": 2,
+    "final_surviving_defects": 4,
+    "recombination_events": 33,
+    "executed_KMC_events": 1800,
+    "physical_time_s": 1.4429592557604224e-09
+  },
+  "notes": [
+    "Vacancies and interstitials migrate with Arrhenius event rates; neighbouring V-I pairs can recombine.",
+    "This is a 2D coarse-grained reaction-diffusion KMC demonstrator, not a silicon defect-cluster model.",
+    "A research model must include species-specific migration, binding, charge states, cluster sizes, dissociation and appropriate 3D lattice geometry."
+  ],
+  "warnings": [
+    "Default barriers and prefactors are placeholders. Calibrate them using atomistic calculations and defect-annealing measurements."
+  ],
+  "metadata": {
+    "size": 30,
+    "initial_pairs": 35,
+    "temperature_K": 900.0,
+    "vacancy_migration_eV": 0.65,
+    "interstitial_migration_eV": 0.25,
+    "recombination_barrier_eV": 0.05,
+    "seed": 2029
+  }
+}

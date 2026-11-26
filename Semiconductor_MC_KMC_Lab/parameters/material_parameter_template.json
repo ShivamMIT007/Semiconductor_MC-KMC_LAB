@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "instructions": "Replace nulls with sourced and unit-checked parameters for a specific material, defect species, charge state, orientation and temperature. Record DOI/source, uncertainty and calibration status for every value.",
+  "silicon": {
+    "lattice_constant_nm": {
+      "value": 0.5431,
+      "unit": "nm",
+      "source": "Replace with the crystal temperature/composition-specific reference used in the study",
+      "uncertainty": null,
+      "calibration_status": "reference_value_only"
+    },
+    "displacement_threshold_eV": {
+      "value": null,
+      "unit": "eV",
+      "source": null,
+      "uncertainty": null,
+      "calibration_status": "not_calibrated"
+    }
+  },
+  "dopants": {
+    "B_in_Si": {
+      "vacancy_migration_barrier_eV": null,
+      "dopant_vacancy_exchange_barrier_eV": null,
+      "interstitial_migration_barrier_eV": null,
+      "attempt_frequency_s-1": null,
+      "binding_energies_eV": {},
+      "charge_states": [],
+      "source_doi": null,
+      "uncertainty": null,
+      "calibration_status": "not_calibrated"
+    },
+    "P_in_Si": {
+      "vacancy_migration_barrier_eV": null,
+      "dopant_vacancy_exchange_barrier_eV": null,
+      "interstitial_migration_barrier_eV": null,
+      "attempt_frequency_s-1": null,
+      "binding_energies_eV": {},
+      "charge_states": [],
+      "source_doi": null,
+      "uncertainty": null,
+      "calibration_status": "not_calibrated"
+    },
+    "As_in_Si": {
+      "vacancy_migration_barrier_eV": null,
+      "dopant_vacancy_exchange_barrier_eV": null,
+      "interstitial_migration_barrier_eV": null,
+      "attempt_frequency_s-1": null,
+      "binding_energies_eV": {},
+      "charge_states": [],
+      "source_doi": null,
+      "uncertainty": null,
+      "calibration_status": "not_calibrated"
+    }
+  },
+  "thin_film_surface": {
+    "deposition_flux_ML_s_site-1": null,
+    "surface_diffusion_barriers_eV": {},
+    "desorption_barriers_eV": {},
+    "attempt_frequencies_s-1": {},
+    "sticking_coefficients": {},
+    "source_doi": null,
+    "uncertainty": null,
+    "calibration_status": "not_calibrated"
+  },
+  "plasma_etch": {
+    "ion_energy_distribution_source": null,
+    "ion_angular_distribution_source": null,
+    "sputter_yield_table_source": null,
+    "surface_reaction_rate_source": null,
+    "source_doi": null,
+    "calibration_status": "not_calibrated"
+  }
+}

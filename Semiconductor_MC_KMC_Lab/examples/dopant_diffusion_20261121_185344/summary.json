@@ -1,0 +1,33 @@
+{
+  "name": "dopant_diffusion",
+  "title": "Vacancy-mediated dopant tracer diffusion in silicon",
+  "method": "Kinetic Monte Carlo · diamond-cubic nearest-neighbour network",
+  "description": "Tracks a dopant tracer exchanging with a mobile vacancy on a periodic diamond-cubic network.",
+  "metrics": {
+    "mean_tracer_diffusivity_nm2_s": 3119104.3534696,
+    "mean_tracer_diffusivity_m2_s": 3.1191043534696e-12,
+    "replicate_standard_deviation_nm2_s": 5334169.899127813,
+    "mean_simulated_duration_s": 8.803999042646008e-09,
+    "diamond_lattice_sites": 216,
+    "coordination_number": 4,
+    "replicates": 5,
+    "events_per_run": 1800
+  },
+  "notes": [
+    "The topology is diamond-cubic with four nearest neighbours per site; the model contains one vacancy and one dopant tracer per replicate.",
+    "The reported diffusivity is a stochastic finite-run tracer estimate from the Einstein relation; uncertainty is estimated across independent runs.",
+    "A single vacancy is not a realistic equilibrium vacancy concentration. Do not interpret this as a calibrated boron or phosphorus diffusivity without a defect-chemistry model.",
+    "The model omits charge states, Fermi-level dependence, dopant-vacancy binding complexes, interstitial-mediated diffusion and concentration-dependent effects."
+  ],
+  "warnings": [
+    "Migration and exchange barriers are user-supplied placeholders unless sourced/calibrated for the specific dopant, defect charge state and temperature."
+  ],
+  "metadata": {
+    "temperature_K": 1100.0,
+    "vacancy_migration_eV": 0.5,
+    "dopant_exchange_eV": 0.55,
+    "lattice_constant_nm": 0.5431,
+    "attempt_frequency_s": 10000000000000.0,
+    "seed": 2025
+  }
+}

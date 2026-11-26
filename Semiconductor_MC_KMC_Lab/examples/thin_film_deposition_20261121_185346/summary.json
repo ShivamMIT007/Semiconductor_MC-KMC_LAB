@@ -1,0 +1,33 @@
+{
+  "name": "thin_film_deposition",
+  "title": "KMC thin-film deposition (solid-on-solid)",
+  "method": "Kinetic Monte Carlo · deposition / surface hopping / desorption",
+  "description": "Coarse-grained surface growth on a periodic 2D solid-on-solid lattice.",
+  "metrics": {
+    "final_mean_thickness_ML": 4.040816326530612,
+    "final_surface_roughness_ML": 1.2072769777304355,
+    "final_max_height_ML": 7,
+    "physical_simulation_time_s": 16.25102553920119,
+    "deposition_events": 792,
+    "surface_hops": 1008,
+    "desorption_events": 0,
+    "net_atom_count_in_columns": 792
+  },
+  "notes": [
+    "Deposition, hopping and desorption are explicit stochastic events with continuous KMC time advancement.",
+    "The attempt frequency is an effective coarse-grained rate in the default example. Replace it with physically justified prefactors before quantitative comparison.",
+    "This SOS model prohibits overhangs and does not explicitly represent precursor chemistry, gas transport, plasma species or crystallographic reconstruction."
+  ],
+  "warnings": [
+    "Use this as a surface-growth algorithm prototype. Real PVD/CVD/ALD requires process-specific fluxes, sticking probabilities, reaction networks and calibrated barriers."
+  ],
+  "metadata": {
+    "temperature_K": 650.0,
+    "flux_ml_s": 0.25,
+    "effective_attempt_frequency_s": 100000.0,
+    "diffusion_barrier_eV": 0.65,
+    "bond_penalty_eV": 0.08,
+    "desorption_barrier_eV": 1.8,
+    "seed": 2026
+  }
+}

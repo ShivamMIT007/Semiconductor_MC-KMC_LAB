@@ -1,0 +1,31 @@
+{
+  "name": "plasma_etch",
+  "title": "Plasma etching · stochastic ion-incidence profile model",
+  "method": "Monte Carlo particle incidence + stochastic effective surface removal",
+  "description": "Samples ion incidence angles and shadowing against a masked 2D feature profile.",
+  "metrics": {
+    "mean_open_area_etch_depth_nm": 0.19905437116343297,
+    "maximum_etch_depth_nm": 0.26603960403892135,
+    "open_area_depth_nonuniformity_coefficient": 0.15993286199871495,
+    "ions_launched": 9000,
+    "ions_hitting_open_surface": 6471,
+    "ions_intercepted_by_mask": 2331,
+    "open_area_hit_fraction": 0.719
+  },
+  "notes": [
+    "Ion positions and angles are Monte Carlo sampled; the local removal depth is sampled from an effective exponential yield law.",
+    "This is not a plasma chemistry solver and not a complete MC-KMC coupling. It omits gas-phase collisions, sheath energy distributions, charging, neutral radicals and passivation.",
+    "Lateral coordinates are model columns; set a physical pitch mapping before comparing to SEM dimensions."
+  ],
+  "warnings": [
+    "Removal-per-ion is an effective user parameter, not a universal sputter yield. Calibrate to etch-rate and SEM cross-section data."
+  ],
+  "metadata": {
+    "ion_energy_eV": 200.0,
+    "angular_sigma_deg": 8.0,
+    "removal_nm_per_ion": 0.002,
+    "columns": 90,
+    "ions": 9000,
+    "seed": 2030
+  }
+}

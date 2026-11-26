@@ -1,0 +1,27 @@
+{
+  "name": "thermal_oxidation",
+  "title": "Silicon thermal oxidation · Deal–Grove model",
+  "method": "Continuum analytical model · classical Deal–Grove baseline",
+  "description": "Predicts oxide thickness from linear-parabolic growth kinetics; no stochastic events are used.",
+  "metrics": {
+    "final_oxide_thickness_nm": 201.5339366124404,
+    "initial_oxide_thickness_nm": 0.0,
+    "linear_parabolic_A_nm": 120.0,
+    "parabolic_rate_B_nm2_s": 18.0
+  },
+  "notes": [
+    "Deal–Grove is a continuum reference model and is deliberately not labelled MC or KMC.",
+    "A and B are condition-dependent: temperature, ambient, pressure, orientation and stress matter.",
+    "The cross-section image is schematic; thickness is represented quantitatively in the CSV and graph."
+  ],
+  "warnings": [
+    "A and B defaults are illustrative. Use measured or literature values for the exact oxidation ambient and temperature."
+  ],
+  "metadata": {
+    "A_nm": 120.0,
+    "B_nm2_s": 18.0,
+    "initial_time_shift_s": 0.0,
+    "duration_s": 3600.0,
+    "initial_oxide_nm": 0.0
+  }
+}

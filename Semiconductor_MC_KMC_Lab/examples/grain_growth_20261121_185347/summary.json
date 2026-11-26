@@ -1,0 +1,29 @@
+{
+  "name": "grain_growth",
+  "title": "Grain growth · 2D Potts Monte Carlo",
+  "method": "Metropolis Monte Carlo · q-state Potts model",
+  "description": "Simulates curvature-driven coarsening of a simplified 2D grain-orientation field.",
+  "metrics": {
+    "initial_labels": 24,
+    "final_labels": 24,
+    "final_mean_area_per_label_sites": 66.66666666666667,
+    "final_grain_boundary_fraction": 0.138125,
+    "total_attempted_site_updates": 32000
+  },
+  "notes": [
+    "The Potts Hamiltonian penalizes unlike nearest-neighbour grain labels; Metropolis updates approximate curvature-driven boundary motion.",
+    "MCS is an algorithmic time unit. A physical seconds conversion requires a calibrated grain-boundary mobility and model-specific mapping.",
+    "The model is 2D, periodic and isotropic; it does not include anisotropic boundary energy, triple-junction physics, solute drag, pinning or elastic effects."
+  ],
+  "warnings": [
+    "Do not report MCS as seconds or claim quantitative grain-growth kinetics without calibration against measured mobility / grain-size evolution."
+  ],
+  "metadata": {
+    "size": 40,
+    "initial_grains": 24,
+    "mcs": 20,
+    "boundary_energy_model_units": 1.0,
+    "effective_temperature_model_units": 0.45,
+    "seed": 2027
+  }
+}

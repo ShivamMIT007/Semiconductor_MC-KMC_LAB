@@ -1,0 +1,30 @@
+{
+  "name": "photolithography",
+  "title": "Photolithography · Monte Carlo photon absorption",
+  "method": "Monte Carlo photon absorption · Beer–Lambert sampling",
+  "description": "Samples photon absorption depths beneath an ideal periodic binary mask to form a stochastic latent image.",
+  "metrics": {
+    "incident_photons": 45000,
+    "absorbed_photons_in_resist": 19591,
+    "fraction_absorbed_in_resist": 0.43535555555555555,
+    "mean_conversion_surrogate": 0.10428058170316151,
+    "fraction_voxels_above_threshold": 0.0725,
+    "resist_thickness_um": 1.0
+  },
+  "notes": [
+    "Absorption depth follows an exponential Beer–Lambert distribution and photon x-positions follow an ideal binary mask.",
+    "The conversion fraction is an illustrative saturating function of absorbed photon count, not a calibrated chemically amplified resist model.",
+    "Optical diffraction, standing waves, acid diffusion, post-exposure bake chemistry and developer transport are omitted."
+  ],
+  "warnings": [
+    "Use a calibrated optical/resist model and SEM/CD data before treating predicted critical dimensions as quantitative."
+  ],
+  "metadata": {
+    "photons": 45000,
+    "absorption_coefficient_um-1": 2.0,
+    "pattern_pitch_um": 0.8,
+    "open_fraction": 0.5,
+    "conversion_threshold": 0.35,
+    "seed": 2031
+  }
+}

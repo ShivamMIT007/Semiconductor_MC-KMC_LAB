@@ -1,0 +1,31 @@
+{
+  "name": "ion_implantation",
+  "title": "Ion implantation in silicon",
+  "method": "Monte Carlo · stochastic range/straggle surrogate",
+  "description": "Samples ion projected ranges and lateral straggles for an illustrative implant profile.",
+  "metrics": {
+    "sampled_mean_range_nm": 60.052477242592985,
+    "sampled_range_straggle_nm": 11.008913682682941,
+    "fraction_stopped_within_target": 1.0,
+    "estimated_peak_concentration_cm-3": 3.75e+20,
+    "mean_damage_proxy_events_per_ion": 48.059666666666665,
+    "nominal_model_range_nm": 60.169013333064186
+  },
+  "notes": [
+    "This module is not a full BCA/TRIM implementation: it samples a Gaussian-like range distribution using explicit illustrative coefficients.",
+    "The damage number is a Kinchin–Pease-style proxy from an assumed nuclear energy fraction; it does not predict surviving defects or amorphization.",
+    "Dose is normalized into a depth concentration histogram; finite lateral extent is not a full 3D wafer model."
+  ],
+  "warnings": [
+    "Calibrate range coefficients and straggle against SRIM/TRIM and/or experimental SIMS before making quantitative claims."
+  ],
+  "metadata": {
+    "species": "B",
+    "energy_keV": 20.0,
+    "dose_cm2": 1000000000000000.0,
+    "tilt_deg": 7.0,
+    "n_ions": 3000,
+    "seed": 1234,
+    "individual_ions": "      ion_id   depth_nm  lateral_nm  damage_proxy_events\n0          0  42.798783   15.280796                   63\n1          1  60.863242   -1.314446                   44\n2          2  68.193179   13.955391                   55\n3          3  61.821944   -1.278830                   54\n4          4  69.523725   10.739252                   41\n...      ...        ...         ...                  ...\n2995    2995  51.397029  -31.182987                   42\n2996    2996  45.385351    0.834239                   46\n2997    2997  73.186338   -1.308206                   46\n2998    2998  52.786233   11.706734                   45\n2999    2999  52.056800    7.480711                   48\n\n[3000 rows x 4 columns]"
+  }
+}

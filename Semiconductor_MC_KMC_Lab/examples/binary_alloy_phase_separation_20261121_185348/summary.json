@@ -1,0 +1,31 @@
+{
+  "name": "binary_alloy_phase_separation",
+  "title": "Binary alloy phase separation",
+  "method": "Metropolis Kawasaki Monte Carlo · conserved composition",
+  "description": "Nearest-neighbour A/B atom exchanges under a pair-interaction Ising Hamiltonian.",
+  "metrics": {
+    "initial_A_fraction": 0.5,
+    "final_A_fraction": 0.5,
+    "final_energy_eV_per_site": -0.0439453125,
+    "largest_same_species_cluster_fraction": 0.474609375,
+    "final_unlike_neighbour_fraction": 0.2802734375
+  },
+  "notes": [
+    "Kawasaki exchanges conserve the number of A and B atoms exactly.",
+    "For ordering, a negative J in E=-JΣsᵢsⱼ favours unlike neighbours on the square lattice; the checkerboard order parameter is illustrative.",
+    "For phase separation, positive J favours like-neighbour clustering. The square-lattice model is not a crystallographically specific alloy Hamiltonian.",
+    "MCS is algorithmic time, not seconds."
+  ],
+  "warnings": [
+    "Interaction energy and lattice topology must be calibrated to a real alloy before predicting a material phase diagram or transition temperature."
+  ],
+  "metadata": {
+    "mode": "phase_separation",
+    "size": 32,
+    "mcs": 20,
+    "temperature_K": 300.0,
+    "interaction_eV": 0.05,
+    "fraction_A": 0.5,
+    "seed": 2028
+  }
+}
